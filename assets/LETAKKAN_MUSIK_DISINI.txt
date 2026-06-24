@@ -1,0 +1,10 @@
+Letakkan file musik Anda di sini dengan nama: music.mp3
+
+Contoh: D:\project\py\kita-blur\assets\music.mp3
+
+Program akan:
+- Mulai memutar lagu dari detik ke-24
+- Otomatis berhenti merekam di detik ke-52 lagu tersebut
+- Total durasi rekaman: 28 detik
+
+Jika file musik tidak ditemukan, program tetap berjalan tanpa musik.

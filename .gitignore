@@ -1,0 +1,25 @@
+# Virtual environment
+venv/
+.venv/
+env/
+
+# Python compiled files
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# Output directories
+output/
+
+# IDE/Editor configurations
+.vscode/
+.idea/
+.project
+.pydevproject
+.settings/
+
+# OS generated files
+Thumbs.db
+Desktop.ini
+.DS_Store
