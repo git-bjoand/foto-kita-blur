@@ -47,41 +47,63 @@ foto-kita-blur/
 
 ### 1. Prasyarat
 
-Pastikan Anda sudah menginstal **Python 3.10** ke atas di sistem operasi Windows Anda.
+Pastikan sistem Anda sudah terinstal **Python 3.10 ke atas**:
+* **Windows:** Unduh dan instal dari [python.org](https://www.python.org/downloads/). Pastikan mencentang opsi *"Add Python to PATH"* saat instalasi.
+* **macOS:** Bisa menggunakan installer resmi atau via Homebrew: `brew install python`.
+* **Linux (Ubuntu/Debian):** Biasanya Python sudah terinstal. Jika belum: `sudo apt update && sudo apt install python3 python3-pip python3-venv`.
 
-### 2. Klon / Siapkan Folder Proyek
+### 2. Klon / Masuk ke Folder Proyek
 
-Masuk ke terminal/Powershell Anda dan arahkan ke direktori proyek `foto-kita-blur`:
+Buka terminal (CMD/PowerShell di Windows, Terminal di macOS/Linux) dan arahkan ke folder proyek Anda:
 
-```powershell
-cd d:\project\py\foto-kita-blur
+```bash
+cd /path/to/foto-kita-blur
 ```
 
 ### 3. Buat dan Aktifkan Virtual Environment (venv)
 
-```powershell
-# Membuat virtual environment
-python -m venv venv
+Pilih perintah sesuai dengan Sistem Operasi yang Anda gunakan:
 
-# Mengaktifkan virtual environment di Windows (PowerShell)
+#### 💻 Windows (PowerShell)
+```powershell
+python -m venv venv
 .\venv\Scripts\Activate.ps1
+```
+
+#### 💻 Windows (Command Prompt / CMD)
+```cmd
+python -m venv venv
+.\venv\Scripts\activate.bat
+```
+
+#### 🍎 macOS / 🐧 Linux
+```bash
+python3 -m venv venv
+source venv/bin/activate
 ```
 
 ### 4. Instal Dependensi
 
-Instal semua pustaka pihak ketiga yang dibutuhkan:
+Instal seluruh pustaka yang dibutuhkan menggunakan perintah berikut:
 
-```powershell
+```bash
 pip install -r requirements.txt
 ```
 
+> [!TIP]
+> **Catatan Tambahan untuk macOS & Linux:**
+> Jika muncul error terkait dengan `tkinter` saat menjalankan aplikasi, Anda perlu menginstal GUI Tkinter di sistem operasi Anda:
+> * **macOS:** Jalankan perintah `brew install python-tk` (membutuhkan [Homebrew](https://brew.sh/)).
+> * **Linux (Ubuntu/Debian):** Jalankan perintah `sudo apt update && sudo apt install python3-tk`.
+
 ### 5. Jalankan Aplikasi
 
-Jalankan perintah berikut untuk membuka aplikasi:
+Setelah virtual environment aktif dan semua dependensi terinstal, jalankan aplikasi dengan perintah:
 
-```powershell
+```bash
 python src/main.py
 ```
+
 
 ---
 
