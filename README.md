@@ -1,11 +1,11 @@
-# 🌸 KITA-BLUR — Kamera AI Sensor Gerakan (Pose-Triggered Camera Blur)
+# 🌸 FOTO-KITA-BLUR — Kamera AI Sensor Gerakan (Pose-Triggered Camera Blur)
 
 [![Python 3.10+](https://img.shields.io/badge/python-3.10%2B-blue.svg?logo=python&logoColor=white)](https://www.python.org/downloads/)
 [![MediaPipe](https://img.shields.io/badge/MediaPipe-0.10.14-purple.svg)](https://mediapipe.dev/)
 [![OpenCV](https://img.shields.io/badge/OpenCV-4.8%2B-green.svg?logo=opencv&logoColor=white)](https://opencv.org/)
 [![GUI](https://img.shields.io/badge/GUI-CustomTkinter-orange.svg)](https://github.com/TomSchimansky/CustomTkinter)
 
-**Kita-Blur** adalah aplikasi kamera berbasis desktop yang dirancang dengan antarmuka modern (Dark Neon Theme) menggunakan CustomTkinter. Aplikasi ini menggunakan teknologi AI **MediaPipe Pose** untuk mendeteksi gestur tubuh Anda secara _real-time_ dan otomatis memicu efek **Gaussian Blur** yang halus ketika gerakan pemicu terdeteksi.
+**foto-Kita-Blur** adalah aplikasi kamera berbasis desktop yang dirancang dengan antarmuka modern (Dark Neon Theme) menggunakan CustomTkinter. Aplikasi ini menggunakan teknologi AI **MediaPipe Pose** untuk mendeteksi gestur tubuh Anda secara _real-time_ dan otomatis memicu efek **Gaussian Blur** yang halus ketika gerakan pemicu terdeteksi.
 
 ---
 
@@ -18,7 +18,7 @@
 - 🎵 **Sinkronisasi Musik Otomatis:** Perekaman video berdurasi tepat **28 detik** diiringi lagu dari detik ke-24 secara otomatis.
 - ⏱ **Perekaman Stabil & Sinkron (1x Speed):** Menghasilkan video keluaran yang pas, mulus, dan tersinkronisasi penuh dengan musik (tidak terlalu cepat/lambat).
 - 👁 **Halaman Pratinjau (Preview Page):** Putar ulang hasil rekaman secara melingkar (_looping_) lengkap dengan audio yang ikut melakukan _loop_ selaras dengan video.
-- 💾 **Simpan Mudah:** Simpan video favorit Anda langsung ke folder bawaan sistem (`User/Videos/Kita-Blur/`) dengan satu tombol.
+- 💾 **Simpan Mudah:** Simpan video favorit Anda langsung ke folder bawaan sistem (`User/Videos/foto-Kita-Blur/`) dengan satu tombol.
 - ⚡ **Super Ringan & Lancar (High Performance):** Dioptimalkan secara mendalam menggunakan model **MediaPipe Lite** dan teknik **Downscaled Blur** untuk memastikan performa tetap mulus di 30 FPS bahkan pada laptop berspesifikasi rendah.
 
 ---
@@ -26,7 +26,7 @@
 ## 🛠 Struktur Proyek
 
 ```text
-kita-blur/
+foto-kita-blur/
 ├── assets/
 │   └── Sal_Priadi_-_Foto_kita_blur_(mp3.pm).mp3  # File musik latar
 ├── output/                                      # Folder penyimpanan video sementara
@@ -51,10 +51,10 @@ Pastikan Anda sudah menginstal **Python 3.10** ke atas di sistem operasi Windows
 
 ### 2. Klon / Siapkan Folder Proyek
 
-Masuk ke terminal/Powershell Anda dan arahkan ke direktori proyek `kita-blur`:
+Masuk ke terminal/Powershell Anda dan arahkan ke direktori proyek `foto-kita-blur`:
 
 ```powershell
-cd d:\project\py\kita-blur
+cd d:\project\py\foto-kita-blur
 ```
 
 ### 3. Buat dan Aktifkan Virtual Environment (venv)
@@ -87,12 +87,12 @@ python src/main.py
 
 ## ⌨️ Kontrol Keyboard & Navigasi
 
-| Tombol / Aksi         | Deskripsi                                                                |
-| --------------------- | ------------------------------------------------------------------------ |
-| **⏺ START RECORDING** | Memulai perekaman video 28 detik (audio otomatis diputar dari detik 24). |
-| **💾 SAVE**           | Menyimpan hasil rekaman secara permanen ke folder `Videos/Kita-Blur/`.   |
-| **↩ RETAKE**          | Membuang hasil rekaman sementara dan kembali ke halaman kamera.          |
-| **`Escape` (Esc)**    | Masuk atau keluar dari mode layar penuh (OS Fullscreen) secara manual.   |
+| Tombol / Aksi         | Deskripsi                                                                   |
+| --------------------- | --------------------------------------------------------------------------- |
+| **⏺ START RECORDING** | Memulai perekaman video 28 detik                                            |
+| **💾 SAVE**           | Menyimpan hasil rekaman secara permanen ke folder `Videos/foto-Kita-Blur/`. |
+| **↩ RETAKE**          | Membuang hasil rekaman sementara dan kembali ke halaman kamera.             |
+| **`Escape` (Esc)**    | Masuk atau keluar dari mode layar penuh (OS Fullscreen) secara manual.      |
 
 ---
 
