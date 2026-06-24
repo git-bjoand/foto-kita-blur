@@ -52,12 +52,16 @@ Pastikan sistem Anda sudah terinstal **Python 3.10 ke atas**:
 * **macOS:** Bisa menggunakan installer resmi atau via Homebrew: `brew install python`.
 * **Linux (Ubuntu/Debian):** Biasanya Python sudah terinstal. Jika belum: `sudo apt update && sudo apt install python3 python3-pip python3-venv`.
 
-### 2. Klon / Masuk ke Folder Proyek
+### 2. Klon Proyek & Masuk ke Direktori
 
-Buka terminal (CMD/PowerShell di Windows, Terminal di macOS/Linux) dan arahkan ke folder proyek Anda:
+Buka terminal Anda (CMD/PowerShell di Windows, Terminal di macOS/Linux), lalu jalankan perintah berikut untuk mengunduh proyek dan masuk ke foldernya:
 
 ```bash
-cd /path/to/foto-kita-blur
+# Mengklon repository dari GitHub
+git clone https://github.com/git-bjoand/foto-kita-blur.git
+
+# Masuk ke folder proyek
+cd foto-kita-blur
 ```
 
 ### 3. Buat dan Aktifkan Virtual Environment (venv)
